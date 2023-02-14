@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.authentication.StartUpFragment">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen_shape_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prototype Map"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/main_color"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/doctorbtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/main_color"
+               android:text="Doctor"
+               android:background="@drawable/buttonshape"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               android:textAllCaps="false"
+         />
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/Receptionistbtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/main_color"
+               android:text="Receptionist"
+               android:textAllCaps="false"
+               android:background="@drawable/buttonshape"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+         />
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/nursebtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/main_color"
+               android:text="Nurse"
+               android:textAllCaps="false"
+               android:background="@drawable/buttonshape"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+         />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/AnalysisEmployeebtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/main_color"
+               android:text="Analysis Employee"
+               android:background="@drawable/buttonshape"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               android:textAllCaps="false"
+         />
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/mangerbtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/main_color"
+               android:text="Manger"
+               android:textAllCaps="false"
+               android:background="@drawable/buttonshape"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+         />
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/hrbtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/main_color"
+               android:text="HR"
+               android:textAllCaps="false"
+               android:background="@drawable/buttonshape"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+         />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen_shape_bottom"
+        android:baselineAlignBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,10 @@
-package com.example.hospital;
+package com.example.hospital.ui.authentication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.hospital.R;
 
 public class MainActivity extends AppCompatActivity {
 
