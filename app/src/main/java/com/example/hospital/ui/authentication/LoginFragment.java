@@ -55,7 +55,7 @@ public class LoginFragment extends Fragment {
 
     private void login() {
 
-        RetrofitClient.getWepService().getResponse(binding.phonenumber.getText().toString()
+        RetrofitClient.getWepService().getResponse(binding.emailtxt.getText().toString()
                 ,binding.password.getText().toString()).enqueue(new Callback<LoginResponseitem>() {
             @Override
             public void onResponse(Call<LoginResponseitem> call, Response<LoginResponseitem> response) {
