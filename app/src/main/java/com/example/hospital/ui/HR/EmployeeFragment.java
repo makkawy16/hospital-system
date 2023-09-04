@@ -1,4 +1,4 @@
-package com.example.hospital.ui.authentication;
+package com.example.hospital.ui.HR;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,53 +11,41 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
 import com.example.hospital.R;
-import com.example.hospital.databinding.FragmentStartUpBinding;
+import com.example.hospital.databinding.FragmentEmployeeBinding;
 
 
-public class StartUpFragment extends Fragment {
+public class EmployeeFragment extends Fragment {
 
+    FragmentEmployeeBinding binding;
 
-    FragmentStartUpBinding binding;
-
-    public StartUpFragment() {
+    public EmployeeFragment() {
         // Required empty public constructor
     }
-
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        }
-
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_start_up, container, false);
+        return inflater.inflate(R.layout.fragment_employee, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        binding=FragmentStartUpBinding.bind(view);
 
-        binding.doctorbtn.setOnClickListener(new View.OnClickListener() {
+        binding = FragmentEmployeeBinding.bind(view);
+        binding.addEmployeebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.action_startUpFragment_to_loginFragment);
+                Navigation.findNavController(view).navigate(R.id.action_employeeFragment_to_addUserFragment);
             }
         });
-        binding.hrbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.action_startUpFragment_to_loginFragment);
-
-            }
-        });
-
-
     }
 }

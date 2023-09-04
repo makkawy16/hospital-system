@@ -1,18 +1,23 @@
 package com.example.hospital.data.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Data{
 	private String birthday;
 	private String address;
 	private String gender;
 	private String mobile;
 	private boolean verified;
+	@SerializedName("last_name")
 	private String lastName;
-	private String createdAt;
+	@SerializedName("created_at")
+	private String createdAt;/*created_at*/
 	private String type;
 	private String tokenType;
 	private String accessToken;
 	private String specialist;
 	private int id;
+	@SerializedName("first_name")
 	private String firstName;
 	private String email;
 	private String status;

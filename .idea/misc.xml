@@ -4,11 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/drawable/buttonshape.xml" value="0.2055" />
+        <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/drawable/employee_btn_shape.xml" value="0.193" />
         <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/drawable/progress_bar.xml" value="0.2055" />
+        <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/layout/activity_home.xml" value="0.24456521739130435" />
         <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/layout/activity_main.xml" value="0.2578125" />
         <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/layout/activity_splash_screen.xml" value="0.2578125" />
+        <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/layout/fragment_add_user.xml" value="0.264" />
+        <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/layout/fragment_employee.xml" value="0.24270833333333333" />
+        <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/layout/fragment_home.xml" value="0.24270833333333333" />
         <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/layout/fragment_login.xml" value="0.24270833333333333" />
         <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/layout/fragment_start_up.xml" value="0.264" />
+        <entry key="..\:/android course instant/android studio projects/hospital/app/src/main/res/layout/gender_list.xml" value="0.25677083333333334" />
       </map>
     </option>
   </component>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HR.EmployeeFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addEmployeebtn"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:src="@drawable/plus_small"
+        android:layout_margin="@dimen/_20sdp"
+        app:fabCustomSize="@dimen/_55sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- <com.google.android.material.button.MaterialButton
+         android:id="@+id/addbtn"
+         android:layout_width="@dimen/_50sdp"
+         android:layout_height="@dimen/_60sdp"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:layout_margin="@dimen/_14sdp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:cornerRadius="@dimen/_192sdp"
+         app:icon="@drawable/plus_small"
+         app:iconGravity="textTop"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

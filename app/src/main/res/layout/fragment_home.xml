@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.HomeFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:src="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@id/userImage"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/specialist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="specialist"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/notification_icon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:src="@drawable/notification" />
+
+    </RelativeLayout>
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/topLeftBTN"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_height="@dimen/_160sdp"
+    app:layout_constraintTop_toBottomOf="@id/info_layout"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_margin="@dimen/_14sdp"
+    app:icon="@drawable/employee_ic"
+    app:iconSize="@dimen/_60sdp"
+    app:iconGravity="textTop"
+    android:text="@string/employee"
+    android:textAllCaps="false"
+    android:backgroundTint="@color/orange"
+    app:cornerRadius="@dimen/_20sdp"
+    />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/tasksBTN"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_height="@dimen/_160sdp"
+    app:layout_constraintTop_toBottomOf="@id/info_layout"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_margin="@dimen/_14sdp"
+    app:icon="@drawable/tasks_ic"
+    app:iconSize="@dimen/_60sdp"
+    app:iconGravity="textTop"
+    android:text="@string/tasks"
+    android:textAllCaps="false"
+    android:backgroundTint="#5fdc89"
+    app:cornerRadius="@dimen/_20sdp"
+    />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ReportsBTN"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_160sdp"
+        app:layout_constraintTop_toBottomOf="@id/topLeftBTN"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/_14sdp"
+        app:icon="@drawable/employee_ic"
+        app:iconSize="@dimen/_60sdp"
+        app:iconGravity="textTop"
+        android:text="@string/reports"
+        android:textAllCaps="false"
+        android:backgroundTint="#915fdc"
+        app:cornerRadius="@dimen/_20sdp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/attendanceBTN"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_160sdp"
+        app:layout_constraintTop_toBottomOf="@id/tasksBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/_14sdp"
+        app:icon="@drawable/employee_ic"
+        app:iconSize="@dimen/_60sdp"
+        app:iconGravity="textTop"
+        android:text="@string/attendance"
+        android:textAllCaps="false"
+        android:backgroundTint="#5fdcdc"
+        app:cornerRadius="@dimen/_20sdp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
