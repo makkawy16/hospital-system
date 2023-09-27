@@ -32,7 +32,10 @@
             android:id="@+id/backbtn"
             android:layout_width="@dimen/_22sdp"
             android:layout_height="@dimen/_22sdp"
-            android:layout_margin="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
             android:src="@drawable/left_arrow" />
 
         <TextView
@@ -111,7 +114,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_20sdp"
-                android:layout_marginEnd="@dimen/_45sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
                 app:boxCornerRadiusBottomStart="@dimen/_15sdp"
@@ -150,7 +153,7 @@
                 app:startIconTint="@color/main_color">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/specialistedittxt"
+                    android:id="@+id/specialistTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/buttonshape"
@@ -198,7 +201,7 @@
                 app:startIconTint="@color/main_color">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/Statustxt"
+                    android:id="@+id/statusTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/buttonshape"

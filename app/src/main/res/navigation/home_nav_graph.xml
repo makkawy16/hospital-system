@@ -9,7 +9,8 @@
         android:id="@+id/homeFragment"
         android:name="com.example.hospital.ui.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home"
+       >
         <action
             android:id="@+id/action_homeFragment_to_employeeFragment"
             app:destination="@id/employeeFragment" />
@@ -18,14 +19,28 @@
         android:id="@+id/employeeFragment"
         android:name="com.example.hospital.ui.HR.EmployeeFragment"
         android:label="fragment_employee"
-        tools:layout="@layout/fragment_employee" >
+        tools:layout="@layout/fragment_employee"
+
+        >
         <action
             android:id="@+id/action_employeeFragment_to_addUserFragment"
             app:destination="@id/addUserFragment" />
+        <action
+            android:id="@+id/action_employeeFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+           />
     </fragment>
     <fragment
         android:id="@+id/addUserFragment"
         android:name="com.example.hospital.ui.HR.AddUserFragment"
         android:label="fragment_add_user"
-        tools:layout="@layout/fragment_add_user" />
+        tools:layout="@layout/fragment_add_user"
+        >
+        <action
+            android:id="@+id/action_addUserFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment"
+
+            />
+
+    </fragment>
 </navigation>

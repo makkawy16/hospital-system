@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import com.example.hospital.R;
 import com.example.hospital.data.model.LoginResponseitem;
@@ -65,10 +66,17 @@ public class HomeFragment extends Fragment {
 
         showUserData();
 
-        if(type.equals("doctor")){
-            binding.topLeftBTN.setText("Calls");
-            binding.topLeftBTN.setIconResource(R.drawable.calls_ic);
-            binding.topLeftBTN.setBackgroundColor(getResources().getColor(R.color.blue));
+        if(type.equals("hr")){
+            binding.topLeftBTN.setText("Employee");
+            binding.topLeftBTN.setIconResource(R.drawable.employee_ic);
+            binding.topLeftBTN.setBackgroundColor(getResources().getColor(R.color.orange));
+            binding.topLeftBTN.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_employeeFragment);
+
+                }
+            });
         }
 
 

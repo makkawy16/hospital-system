@@ -3,23 +3,50 @@ package com.example.hospital.data.model;
 import com.google.gson.annotations.SerializedName;
 
 public class Data{
+
+	@SerializedName("birthday")
 	private String birthday;
+
+	@SerializedName("address")
 	private String address;
+
+	@SerializedName("gender")
 	private String gender;
+
+	@SerializedName("mobile")
 	private String mobile;
+
+	@SerializedName("verified")
 	private boolean verified;
+
 	@SerializedName("last_name")
 	private String lastName;
+
 	@SerializedName("created_at")
-	private String createdAt;/*created_at*/
+	private String createdAt;
+
+	@SerializedName("type")
 	private String type;
+
+	@SerializedName("token_type")
 	private String tokenType;
+
+	@SerializedName("access_token")
 	private String accessToken;
+
+	@SerializedName("specialist")
 	private String specialist;
+
+	@SerializedName("id")
 	private int id;
+
 	@SerializedName("first_name")
 	private String firstName;
+
+	@SerializedName("email")
 	private String email;
+
+	@SerializedName("status")
 	private String status;
 
 	public String getBirthday(){
